@@ -48,5 +48,5 @@ TEST_CASE("classify Temperature Breach") {
 
   checkAndAlert(TO_CONTROLLER, batteryCharacter, 41);
   checkAndAlert(TO_EMAIL, batteryCharacter, 41);
-  REQUIRE(classifyTemperatureBreach(MED_ACTIVE_COOLING, 41) == TOO_HIGH)
+  REQUIRE(classifyTemperatureBreach(MED_ACTIVE_COOLING, 41) == TOO_HIGH);
 }
